@@ -106,7 +106,7 @@
 {
     UIColor * color = objc_getAssociatedObject(self, _cmd);
     if (!color) {
-        color = [UIColor lightGrayColor];
+        color = [UIColor redColor];
         objc_setAssociatedObject(self, _cmd, color, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     }
     return color;
